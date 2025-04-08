@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply bg-white dark:bg-gray-900 text-black dark:text-white transition-colors duration-200;
+}
+
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px; 
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.5);
+  border-radius: 10px;
+  border: transparent;
+}
+html.dark ::-webkit-scrollbar-thumb {
+    background-color: rgba(107, 114, 128, 0.5);
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+}
+html.dark * {
+    scrollbar-color: rgba(107, 114, 128, 0.5) transparent;
+}
